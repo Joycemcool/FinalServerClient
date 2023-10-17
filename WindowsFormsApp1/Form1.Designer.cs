@@ -47,14 +47,14 @@
             // 
             // menuStrip3
             // 
-            this.menuStrip3.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip3.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
             this.connectToolStripMenuItem});
             this.menuStrip3.Location = new System.Drawing.Point(0, 0);
             this.menuStrip3.Name = "menuStrip3";
-            this.menuStrip3.Size = new System.Drawing.Size(772, 42);
+            this.menuStrip3.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
+            this.menuStrip3.Size = new System.Drawing.Size(386, 24);
             this.menuStrip3.TabIndex = 4;
             this.menuStrip3.Text = "menuStrip3";
             // 
@@ -63,13 +63,13 @@
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(96, 38);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(50, 22);
             this.toolStripMenuItem1.Text = "Game";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -79,70 +79,77 @@
             this.serverToolStripMenuItem,
             this.clientToolStripMenuItem});
             this.connectToolStripMenuItem.Name = "connectToolStripMenuItem";
-            this.connectToolStripMenuItem.Size = new System.Drawing.Size(123, 38);
+            this.connectToolStripMenuItem.Size = new System.Drawing.Size(64, 22);
             this.connectToolStripMenuItem.Text = "Connect";
             // 
             // serverToolStripMenuItem
             // 
             this.serverToolStripMenuItem.Name = "serverToolStripMenuItem";
-            this.serverToolStripMenuItem.Size = new System.Drawing.Size(214, 44);
+            this.serverToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.serverToolStripMenuItem.Text = "Server";
             // 
             // clientToolStripMenuItem
             // 
             this.clientToolStripMenuItem.Name = "clientToolStripMenuItem";
-            this.clientToolStripMenuItem.Size = new System.Drawing.Size(214, 44);
+            this.clientToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.clientToolStripMenuItem.Text = "Client";
             this.clientToolStripMenuItem.Click += new System.EventHandler(this.clientToolStripMenuItem_Click);
             // 
             // labelServer
             // 
             this.labelServer.AutoSize = true;
-            this.labelServer.Location = new System.Drawing.Point(39, 106);
+            this.labelServer.Location = new System.Drawing.Point(20, 55);
+            this.labelServer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelServer.Name = "labelServer";
-            this.labelServer.Size = new System.Drawing.Size(75, 25);
+            this.labelServer.Size = new System.Drawing.Size(38, 13);
             this.labelServer.TabIndex = 0;
             this.labelServer.Text = "Server";
             this.labelServer.Click += new System.EventHandler(this.label1_Click);
             // 
             // textIPaddress
             // 
-            this.textIPaddress.Location = new System.Drawing.Point(122, 106);
+            this.textIPaddress.Location = new System.Drawing.Point(61, 55);
+            this.textIPaddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textIPaddress.Name = "textIPaddress";
-            this.textIPaddress.Size = new System.Drawing.Size(557, 31);
+            this.textIPaddress.Size = new System.Drawing.Size(280, 20);
             this.textIPaddress.TabIndex = 5;
             this.textIPaddress.Text = "127.0.0.1:9000";
+            this.textIPaddress.TextChanged += new System.EventHandler(this.textIPaddress_TextChanged);
             // 
             // textConversation
             // 
-            this.textConversation.Location = new System.Drawing.Point(122, 152);
+            this.textConversation.Location = new System.Drawing.Point(61, 79);
+            this.textConversation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textConversation.Multiline = true;
             this.textConversation.Name = "textConversation";
-            this.textConversation.Size = new System.Drawing.Size(552, 250);
+            this.textConversation.Size = new System.Drawing.Size(278, 132);
             this.textConversation.TabIndex = 6;
             // 
             // labelMessage
             // 
             this.labelMessage.AutoSize = true;
-            this.labelMessage.Location = new System.Drawing.Point(22, 435);
+            this.labelMessage.Location = new System.Drawing.Point(11, 226);
+            this.labelMessage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelMessage.Name = "labelMessage";
-            this.labelMessage.Size = new System.Drawing.Size(100, 25);
+            this.labelMessage.Size = new System.Drawing.Size(50, 13);
             this.labelMessage.TabIndex = 0;
             this.labelMessage.Text = "Message";
             this.labelMessage.Click += new System.EventHandler(this.label1_Click);
             // 
             // textMessage
             // 
-            this.textMessage.Location = new System.Drawing.Point(128, 432);
+            this.textMessage.Location = new System.Drawing.Point(64, 225);
+            this.textMessage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textMessage.Name = "textMessage";
-            this.textMessage.Size = new System.Drawing.Size(557, 31);
+            this.textMessage.Size = new System.Drawing.Size(280, 20);
             this.textMessage.TabIndex = 5;
             // 
             // buttonSend
             // 
-            this.buttonSend.Location = new System.Drawing.Point(564, 505);
+            this.buttonSend.Location = new System.Drawing.Point(282, 263);
+            this.buttonSend.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonSend.Name = "buttonSend";
-            this.buttonSend.Size = new System.Drawing.Size(109, 36);
+            this.buttonSend.Size = new System.Drawing.Size(54, 19);
             this.buttonSend.TabIndex = 7;
             this.buttonSend.Text = "Send";
             this.buttonSend.UseVisualStyleBackColor = true;
@@ -150,9 +157,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(772, 633);
+            this.ClientSize = new System.Drawing.Size(386, 329);
             this.Controls.Add(this.buttonSend);
             this.Controls.Add(this.textConversation);
             this.Controls.Add(this.textMessage);
@@ -160,6 +167,7 @@
             this.Controls.Add(this.labelMessage);
             this.Controls.Add(this.labelServer);
             this.Controls.Add(this.menuStrip3);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "TCP/IP Client";

@@ -50,6 +50,11 @@ namespace TCPServer
            
         }
 
+        //UI thread
+        //Using delegate to create a small piece of code to be executed on the UI thread 
+        //MethodInvoker is a delegate defined in the System.Windows.Forms namespace,
+        //and it represents a method that takes no arguments and has no return value.
+        //It's often used to marshal calls to the UI thread for updating the user interface
         private void Events_ClientDisconnected(object sender, ConnectionEventArgs e)
         {
             this.Invoke((MethodInvoker)delegate
@@ -70,9 +75,12 @@ namespace TCPServer
 
         }
 
-
+        // allow the UI to remain responsive while the code within the Task.
+        // Run block is running on a separate thread. 
         private async void serverToolStripMenuItem_Click(object sender, EventArgs e)
         {    // Start the server on a separate thread using Task.Run
+            //Task.Run is a way to execute a piece of code on a separate thread,
+            //effectively creating a new task.
             await Task.Run(() =>
             {
                 server.Start();//Thread 

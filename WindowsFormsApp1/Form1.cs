@@ -96,5 +96,10 @@ namespace WindowsFormsApp1
         {
             ExitFunction.ExitApplication(this);
         }
+
+        private void textIPaddress_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
